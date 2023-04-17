@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weatherStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit="getData(event)" class="searchData">
+            <input type="text" id="user_input" placeholder="Enter the city name" spellcheck="false">
+            <button><img src="./images/search_icon.png" alt="icon"></button>
+        </form>
+
+        <div class="time_weatherstatus">
+            <div class="time">
+                <p id="localtime">______</p>
+            </div>
+               
+            <div class="icon">
+                <img id="logoImage" src="" alt="icon">
+                <p id="weatherstatus">____</p>
+            </div>
+        </div>
+
+        
+        <section class="location_details">
+            <div class="card">
+                <p>Country Name</p>
+                <p id="countryName">______</p>
+            </div>
+
+            <div class="card">
+                <p>State Name</p>
+                <p id="stateName">______</p>
+            </div>
+
+            <div class="card">
+                <p>City Name</p>
+                <p id="cityName">______</p>
+            </div>
+        </section>
+
+
+        <section class="weather_status">
+
+            <div class="info">
+                <div class="icon_grp">
+                    <img id="humid" src="./images/humidity.svg" alt="">
+                </div>
+                <div class="details">
+                    <p>Humidity(%)</p>
+                    <p id="humidity">______</p>
+
+                </div>
+            </div>
+            <div class="info">
+                <div class="icon_grp">
+                    <img id="wspeed" src="./images/wind.svg" alt="">
+                </div>
+                <div class="details">
+                    <p>WindSpeed(kmph)</p>
+                    <p id="WindSpeed">______</p>
+
+                </div>
+            </div>
+            <div class="info">
+                <div class="icon_grp">
+                    <img id="temp" src="./images/temp.svg" alt="">
+                </div>
+                <div class="details">
+                    <p>Temperature(°C)</p>
+                    <p id="Temperature">______</p>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>
